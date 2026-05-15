@@ -1,0 +1,55 @@
+body {
+    background-color: #F8F8F8; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #44443B; 
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #44443B; 
+    color: #EC7A1C; 
+    padding: 10px;
+}
+
+nav a {
+    color: #EC7A1C; 
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Hover Effect for Nav Links */
+nav a:hover {
+    text-decoration: underline;
+    color: #FFA500;
+}
+
+header {
+    padding: 10px;
+    background: #9B806E; 
+    text-align: center;
+    color: #44443B; 
+}
+
+header img {
+    width: 80px; 
+    height: auto; 
+}
+
+button, .btn {
+    background-color: #90462C; 
+    color: #E6E4E0; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #EC7A1C; 
+}
+
+/* Form Padding */
+form div {
+    margin-bottom: 10px;
+}
