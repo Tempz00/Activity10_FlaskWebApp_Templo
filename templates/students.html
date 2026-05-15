@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Students{% endblock %}
+{% block content %}
+    <h2>Student List</h2>
+    <p>Total Students: {{ students|length }}</p>
+    <form method="POST" action="{{ url_for('add_student') }}">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit" class="btn btn-primary">Add Student</button>
+    </form>
+    <ul>
+        {% for student in students %}
+            <li><strong>{{ student.full_name }}</strong> ({{ student.email }}) - 
+                <a href="{{ url_for('delete_student', id=student.id) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

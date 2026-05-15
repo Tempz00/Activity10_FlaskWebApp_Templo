@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Hello, I am {{ name }}!</h2>
+    <p>Welcome to my Flask Activity 10 web page.</p>
+    <p>Section: {{ section }}</p>
+    {% if current_user.is_authenticated %}
+        <p>Welcome back, {{ current_user.email }}</p>
+    {% endif %}
+{% endblock %}
